@@ -8,7 +8,7 @@ class Company(models.Model):
     companyLocation = models.CharField(max_length=100)
     companyAbout = models.TextField(max_length=100)
     companyType = models.CharField(max_length=100, choices=(('IT', 'IT'),('Non IT', 'Non IT')))
-    companyActive = models.BooleanField(default=False)
+    companyActive = models.BooleanField(default=False)  
 
     def __str__(self):
         return self.companyName
